@@ -36,6 +36,30 @@
   }
 }
 
+@media(max-width: 1060px) {
+  .footer_wrapper_center {
+    gap: 30px;
+  }
+}
+
+@media(max-width: 960px) {
+  .header_bot_list {
+    gap: 40px;
+  }
+
+  /* .header_desktop_wrapper {
+    display: none;
+  }
+
+  .header_mobile_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+  } */
+}
+
 @media(max-width: 770px) {
   .container {
     max-width: 700px;
@@ -87,7 +111,7 @@
     padding: 50px 0;
   }
 
-  .footer_wrapper_desctop{
+  .footer_wrapper_desctop {
     display: none;
   }
 
