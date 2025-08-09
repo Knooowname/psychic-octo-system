@@ -1,0 +1,19 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.insert_user = exports.users_table = void 0;
+var crypto_1 = __importDefault(require("crypto"));
+var config_json_1 = __importDefault(require("../../config/config.json"));
+var DateStr_1 = require("../../config/dbase/DateStr");
+exports.users_table = {
+    sql: "\n    DROP TABLE IF EXISTS users;\n    CREATE TABLE users (\n        id                  BIGSERIAL NOT NULL PRIMARY KEY,\n        last_name           VARCHAR(150) DEFAULT(''),\n        first_name          VARCHAR(150) DEFAULT(''),\n        email               VARCHAR(150) DEFAULT(''),\n        password            TEXT DEFAULT(''),\n        phone               VARCHAR(20) DEFAULT(''),\n        address             TEXT DEFAULT(''),\n        role_id             BIGINT DEFAULT(0),\n        mail_code           TEXT DEFAULT(''),\n        act_mail            BOOL DEFAULT(FALSE),\n        re_password_code    TEXT DEFAULT(''),\n        deleted             BOOL DEFAULT(FALSE),\n        data_deleted        TIMESTAMP DEFAULT(CURRENT_TIMESTAMP),\n        created_at          TIMESTAMP DEFAULT(CURRENT_TIMESTAMP)\n    );\n\n    COMMENT ON TABLE users IS '\u041F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u0438';\n    COMMENT ON COLUMN users.id IS '\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440';\n    COMMENT ON COLUMN users.last_name IS '\u0424\u0430\u043C\u0438\u043B\u0438\u044F';\n    COMMENT ON COLUMN users.first_name IS '\u0418\u043C\u044F';\n    COMMENT ON COLUMN users.email IS '\u041F\u043E\u0447\u0442\u0430/\u041B\u043E\u0433\u0438\u043D';\n    COMMENT ON COLUMN users.password IS '\u041F\u0430\u0440\u043E\u043B\u044C';\n    COMMENT ON COLUMN users.phone IS '\u0422\u0435\u043B\u0435\u0444\u043E\u043D';\n    COMMENT ON COLUMN users.address IS '\u0410\u0434\u0440\u0435\u0441 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438';\n    COMMENT ON COLUMN users.role_id IS '\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u043A\u0430\u0442\u043E\u0440 \u0440\u043E\u043B\u0438';\n    COMMENT ON COLUMN users.mail_code IS '\u041A\u043E\u0434 \u043F\u043E\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043D\u0438\u044F \u043F\u043E\u0447\u0442\u044B';\n    COMMENT ON COLUMN users.act_mail IS '\u0410\u043A\u0442\u0438\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u0430 \u043B\u0438 \u043F\u043E\u0447\u0442\u0430';\n    COMMENT ON COLUMN users.re_password_code IS '\u041A\u043E\u0434 \u0441\u0431\u0440\u043E\u0441\u0430 \u043F\u0430\u0440\u043E\u043B\u044F';\n    COMMENT ON COLUMN users.deleted IS '\u0423\u0434\u0430\u043B\u0435\u043D \u043B\u0438 \u0430\u043A\u043A\u0430\u0443\u043D\u0442';\n    COMMENT ON COLUMN users.data_deleted IS '\u0423\u0434\u0430\u043B\u0435\u043D \u043B\u0438 \u0430\u043A\u043A\u0430\u0443\u043D\u0442';\n    COMMENT ON COLUMN users.created_at IS '\u0414\u0430\u0442\u0430 \u0440\u0435\u0433\u0438\u0441\u0442\u0430\u0440\u0446\u0438\u0438';\n\n    ",
+    args: new Array()
+};
+exports.insert_user = {
+    sql: "INSERT INTO users(last_name, first_name, email, password, phone, address, role_id, mail_code, act_mail, re_password_code, deleted, data_deleted, created_at) \n    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)",
+    args: ['admin', 'admin', 'admin', crypto_1.default.createHmac('sha256', config_json_1.default.crypto_code).update('admin').digest('hex'), '0(000)000-00-00', 'Курган, К.Маркса, стр.106', 1, '', false,
+        crypto_1.default.createHmac('sha256', config_json_1.default.crypto_code).update('admin' + '_' + crypto_1.default.createHmac('sha256', config_json_1.default.crypto_code).update('admin').digest('hex')).digest('hex'), false, null, (0, DateStr_1.dateTimeToSQL)(new Date(Date.now()))]
+};
+//# sourceMappingURL=users.js.map

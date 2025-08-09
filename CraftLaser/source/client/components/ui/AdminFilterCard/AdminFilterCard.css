@@ -1,0 +1,28 @@
+.admin_all_filters_card {
+    padding: 24px;
+    width: auto;
+    height: auto;
+    background-color: #f8f8f8;
+    border-radius: 12px;
+}
+
+.admin_all_filters_title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #333;
+}
+
+.admin_all_filters_subfilters_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin_all_filters_subfilters_descr {
+    font-size: 16px;
+    color: #333;
+}

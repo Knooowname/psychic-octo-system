@@ -1,0 +1,68 @@
+.manager_card_wrapper_all_info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+    background-color: #f8f8f8;
+    border: 1px solid #a1a1a1;
+    border-radius: 16px;
+}
+
+.manager_card_wrapper_btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manager_card_btn {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #00AD25;
+    border-radius: 4px;
+    background-color: #fff;
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.manager_card_btn:hover {
+    background-color: #00AD25;
+}
+
+.btn-edit {
+    background-image: url('../../../assets/img/edit.png');
+}
+
+.btn-delete {
+    background-image: url('../../../assets/img/close_icon.png');
+}
+
+.manager_card_wrapper_img {
+    width: 65px;
+    height: 65px;
+    border: 1px solid #a1a1a1;
+    border-radius: 50%;
+    background-color: #949494;
+    background-image: url('../../../assets/img/user_img.png');
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.manager_card_title {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.manager_card_descr {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}

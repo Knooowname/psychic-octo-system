@@ -1,0 +1,63 @@
+.account_section {
+    padding-top: 180px;
+}
+
+.account_title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+
+.account_btns_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 64px;
+}
+
+.account_btn {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center left;
+}
+
+.account_btn-active {
+    border-bottom: 1px solid #00AD25;
+}
+
+.btn-basket {
+    background-image: url('../../assets/img/basket.png');
+}
+
+.btn-gear {
+    background-image: url('../../assets/img/gear.png');
+}
+
+.account_btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #00AD25;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.account_btn:hover::after {
+    transform: scaleX(1); 
+}

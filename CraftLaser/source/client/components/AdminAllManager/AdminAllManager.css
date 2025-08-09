@@ -1,0 +1,24 @@
+.managers_wrapper_title_and_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.admin_section_title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #333;
+}
+
+.managers_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}

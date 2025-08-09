@@ -1,0 +1,25 @@
+.admin_all_filters_wrapper_title_and_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.admin_all_filters_wrapper_btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.title {
+    margin: 0;
+}
+
+.admin_all_filters_list {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

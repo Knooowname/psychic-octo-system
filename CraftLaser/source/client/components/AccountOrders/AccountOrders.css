@@ -1,0 +1,29 @@
+.account_orders_list {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+    width: 100%;
+}
+
+.account_orders_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 200px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #00ad25;
+    border-radius: 16px;
+}
+
+.no_orders_descr {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+}

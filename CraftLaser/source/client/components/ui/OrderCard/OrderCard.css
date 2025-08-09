@@ -1,0 +1,30 @@
+.account_item_wrapper_img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.account_orders_span {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.account_orders_descr {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+.no_img_span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+}

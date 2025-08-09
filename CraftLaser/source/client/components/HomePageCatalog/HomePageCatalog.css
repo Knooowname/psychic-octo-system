@@ -1,0 +1,84 @@
+.catalog_wrapper_all {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.catalog_wrapper_filters {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 320px;
+    max-width: 380px;
+    padding: 32px 24px;
+    background-color: #f8f8f8;
+    border-radius: 16px;
+}
+
+.filters_title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 144%;
+    color: #333;
+}
+
+.all_filters_list {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.all_filters_item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.subcategory_filters_title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 144%;
+    color: #333;
+}
+
+.subcategory_filters_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.label_input_checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.filters_checkbox_input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    accent-color: #00AD25;
+}
+
+.wrapper_price_inputs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.catalog_wrapper_list_products {
+    max-width: 1220px;
+    width: 100%;
+    min-width: 400px;
+}

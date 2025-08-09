@@ -1,0 +1,23 @@
+{
+    "server_config": {
+        "host": "127.0.0.1",
+        "port": "81"
+    },
+    "config_db": {
+        "host": "localhost",
+        "port": 5432,
+        "user": "postgres",
+        "password": "000000",
+        "database": "CraftLaser"
+    },
+    "crypto_code": "dcbKK2~KBs",
+    "config_mail": {
+        "host": "smtp.mail.ru",
+        "port": 465,
+        "secure": true,
+        "auth": {
+            "user": "noreplay@burvodstroy45.ru",
+            "pass": "jeLST1X5djEqVLnlbT4b"
+        }
+    }
+}

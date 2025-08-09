@@ -1,0 +1,40 @@
+.advantages_list_wrapper {
+    text-align: center;
+    width: 100%;
+    padding: 0 150px;
+    min-height: 220px;
+}
+
+.advantages_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages_item {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.advantages_list .advantages_item:first-child {
+    gap: 32px;
+}
+
+.advantages_list .advantages_item:nth-child(2) {
+    gap: 120px;
+}
+
+.linear_line {
+    height: 220px;
+    width: 1px;
+    background: linear-gradient(to bottom, 
+    rgba(0, 173, 37, 0) 0%,       /* прозрачный красный слева */
+    rgba(0, 173, 37, 0.5) 50%,      /* красный по центру */
+    rgba(0, 173, 37, 0) 100%      /* прозрачный красный справа */
+);
+}

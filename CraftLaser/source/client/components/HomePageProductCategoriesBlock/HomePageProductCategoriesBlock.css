@@ -1,0 +1,39 @@
+.categories_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.categories_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    min-width: 400px;
+    min-height: 420px;
+    border-radius: 16px;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 4px 4px 26px rgba(0, 0, 0, 0.11);
+}
+
+.categories_descr {
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: normal;
+    color: #333;
+}
+
+.mask-tree {
+    background-image: url('../../assets/img/mask_tree.png');
+    padding-left: 5px;
+}
+
+.mask-metal {
+    background-image: url('../../assets/img/mask_metal.png');
+    padding-right: 5px;
+}

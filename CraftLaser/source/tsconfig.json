@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "ESNext",
+        "target": "ES6",
+        "jsx": "react",
+        "allowJs": true,
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "../../public",
+        "baseUrl": "./source",
+        "paths": {
+            "@/*": ["*"],
+        }
+    },
+    // "include": ["src","src/.index.tsx"],
+    // "exclude": ["node_modules", "**/*.spec.ts"]
+}

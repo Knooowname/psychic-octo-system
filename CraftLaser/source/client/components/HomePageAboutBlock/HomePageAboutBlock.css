@@ -1,0 +1,11 @@
+.about_block_descr {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 144%;
+    color: #333;
+}
+
+.descr-pad {
+    margin-bottom: 24px;
+}

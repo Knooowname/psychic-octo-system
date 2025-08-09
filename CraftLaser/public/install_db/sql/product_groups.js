@@ -1,0 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.product_groups_table = void 0;
+exports.product_groups_table = {
+    sql: "\n    DROP TABLE IF EXISTS product_groups;\n    CREATE TABLE product_groups (\n        id                  BIGSERIAL NOT NULL PRIMARY KEY,\n        parent_id            BIGINT DEFAULT(0),\n        name_group        VARCHAR(250) DEFAULT(''),\n        img                 TEXT DEFAULT(''),\n        deleted             BOOL DEFAULT(FALSE),\n        created_at          TIMESTAMP DEFAULT(CURRENT_TIMESTAMP)\n    );\n\n    COMMENT ON TABLE product_groups IS '\u0413\u0440\u0443\u043F\u043F\u044B \u0438\u0437\u0434\u0435\u043B\u0438\u0439';\n    COMMENT ON COLUMN product_groups.id IS '\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440';\n    COMMENT ON COLUMN product_groups.parent_id IS '\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440 \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u043E\u0439 \u0433\u0440\u0443\u043F\u043F\u044B';\n    COMMENT ON COLUMN product_groups.name_group IS '\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u0433\u0440\u0443\u043F\u043F\u044B';\n    COMMENT ON COLUMN product_groups.img IS '\u0418\u0437\u043E\u0431\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \u0434\u043B\u044F \u0433\u0440\u0443\u043F\u043F\u044B';\n    COMMENT ON COLUMN product_groups.deleted IS '\u0417\u0430\u0431\u043B\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u0430 \u043B\u0438 \u0433\u0440\u0443\u043F\u043F\u0430';\n    COMMENT ON COLUMN product_groups.created_at IS '\u0414\u0430\u0442\u0430 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F';\n    ",
+    args: new Array()
+};
+//# sourceMappingURL=product_groups.js.map

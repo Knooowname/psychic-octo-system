@@ -1,0 +1,11 @@
+#root {
+  display: block;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  padding-top: 24px;
+}
+
+section {
+    padding: 60px 0;
+}

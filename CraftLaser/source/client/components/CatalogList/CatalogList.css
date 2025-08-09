@@ -1,0 +1,11 @@
+.catalog_list_products {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 380px;
+    /* max-height: 400px; */
+}
