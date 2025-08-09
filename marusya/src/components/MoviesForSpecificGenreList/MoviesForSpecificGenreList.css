@@ -1,0 +1,31 @@
+.wrapper_filter_movie {
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+
+.title_link {
+    text-decoration: none;
+}
+
+.filter_genre_title {
+    margin: 0;
+    margin-bottom: 64px;
+    padding-left: 56px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+    background-image: url('../../assets/icons/arrow-genre.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+.filter_movie_genre_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 35px;
+}

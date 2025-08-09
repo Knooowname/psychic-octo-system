@@ -1,0 +1,13 @@
+.nav_btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Play';
+    cursor: pointer;
+}
+

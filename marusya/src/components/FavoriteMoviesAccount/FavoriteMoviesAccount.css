@@ -1,0 +1,16 @@
+.favorites_movies_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.no_favorites_title {
+    margin: 0;
+    padding: 32px 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}

@@ -1,0 +1,22 @@
+.mobile_top_10_movies_title {
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.mobile_top_10_movies_slider {
+    height: 360px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.mobile_top_10_movies_slider-track {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

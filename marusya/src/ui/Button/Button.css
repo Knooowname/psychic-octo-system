@@ -1,0 +1,52 @@
+button {
+    padding: 0; 
+    padding: 16px 48px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+button[data-variant='primary'] {
+    background-color: rgba(103, 165, 235, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+button[data-variant='primary']:disabled {
+    background-color: rgba(69, 82, 110, 1);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button[data-variant='secondary'] {
+    color: #fff;
+    background-color: rgba(57, 59, 60, 1);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+button[data-variant='secondary']:disabled {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(116, 116, 116, 1);
+}
+
+button[data-variant='secondary']:hover {
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+button[data-variant='icon'] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 22px;
+    background-color: rgba(57, 59, 60, 1);
+}
+
+button[data-variant='icon']:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+button[data-variant='icon']:hover svg path {
+    fill: rgb(0, 0, 0);
+}

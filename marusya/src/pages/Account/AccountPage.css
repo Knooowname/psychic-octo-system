@@ -1,0 +1,55 @@
+.wrapper_account_info {
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+
+.account_title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.account_list {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    margin: 0;
+    margin-bottom: 64px;
+    padding: 0;
+    list-style: none;
+}
+
+.favorites_icon_btn {
+    background-image: url('../../assets/icons/heart.png');
+}
+
+.user_icon_btn {
+    background-image: url('../../assets/icons/user.png');
+}
+
+.account_btn {
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid transparent;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+.btn-active {
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid rgba(220, 93, 252, 1);
+}

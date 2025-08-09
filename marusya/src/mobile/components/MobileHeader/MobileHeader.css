@@ -1,0 +1,31 @@
+.mobile_header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.mobile_header_logo_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_img {
+    width: 80px;
+}
+
+.header_mobile_list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.mobile_header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}

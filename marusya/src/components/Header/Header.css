@@ -1,0 +1,141 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 24px;
+}
+
+.header_picture {
+  height: 32px;
+  width: 143px;
+  margin-right: 80px;
+}
+
+.header_list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_input_search {
+  display: block;
+  width: 650px;
+  height: 48px;
+  margin-right: 80px;
+  padding: 0;
+  padding-left: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  background-color: #393b3c;
+  border: 1px solid transparent;
+  background-image: url("./src/assets/icons/search.svg");
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  outline: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.header_input_search::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header_input_search:focus {
+  outline: 1px solid rgba(220, 93, 252, 1);
+  background-image: url("./src/assets/icons/purpleSearch.svg");
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+.header_input_search[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+
+.btn-auth {
+  display: flex;
+  width: 70px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.user_account {
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 0;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.header_item {
+  padding: 5px 0;
+}
+
+.active_header_item {
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgba(220, 93, 252, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.wrapper__relative {
+  position: relative;
+}
+
+.wrapper__search__cards {
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  width: 70%;
+  height: auto;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #393B3C;
+  z-index: 100;
+}
+
+.searched_list_movies {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.searched_item_link {
+  text-decoration: none;
+}
+
+.header_mobile_list {
+  display: none;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header_mobile_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_menu_icons {
+  width: 24px;
+  height: 24px;
+}

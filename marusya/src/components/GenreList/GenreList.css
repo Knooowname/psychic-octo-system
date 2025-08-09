@@ -1,0 +1,22 @@
+.wrapper_genres_all {
+    padding-top: 64px;
+    padding-bottom: 160px;
+}
+
+.genre_title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.genres_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 33px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

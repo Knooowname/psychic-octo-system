@@ -1,0 +1,57 @@
+html {
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+          box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: local('Play-Regular'),
+    url('./assets/fonts/Play-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Play-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: local('Play-Bold'),
+    url('./assets/fonts/Play-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Play-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Play', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  min-width: 320px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(39, 36, 36, 0.7) 100%),
+  linear-gradient(178.73deg, rgba(39, 135, 245, 0.9) -17.53%, rgba(163, 147, 245, 0.9) 131.74%);
+
+
+
+  min-height: 100vh;
+}
+
+

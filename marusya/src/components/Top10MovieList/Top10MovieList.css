@@ -1,0 +1,25 @@
+.wrapper_list {
+    margin-bottom: 120px;
+}
+
+.list_title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.top_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.top_movie_card {
+    text-decoration: none;
+}

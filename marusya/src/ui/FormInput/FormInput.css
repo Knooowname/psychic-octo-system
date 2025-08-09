@@ -1,0 +1,39 @@
+.login_and_reg_form_input {
+    position: relative;
+    width: 280px;
+    height: 56px;
+    padding-left: 52px;
+    background-position: 16px center;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.3s all ease-in-out;
+}
+
+.login_and_reg_form_input::placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.login_and_reg_form_input:focus {
+    outline: none;
+    border: 1px solid rgba(180, 169, 255, 1);
+}
+
+.login_and_reg_form_input:hover {
+    outline: none;
+    border: 1px solid rgba(180, 169, 255, 1);
+}
+
+.error_span {
+    font-size: 14px;
+    color: red;
+    font-weight: 400;
+}
